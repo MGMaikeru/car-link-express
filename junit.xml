@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="209" failures="0" errors="0" time="22.592">
+  <testsuite name="Rental DTOs" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="7.421" tests="12">
+    <testcase classname="Rental DTOs CreateRentalRequestDto should validate required properties" name="Rental DTOs CreateRentalRequestDto should validate required properties" time="0.028">
+    </testcase>
+    <testcase classname="Rental DTOs CreateRentalRequestDto should fail with missing required properties" name="Rental DTOs CreateRentalRequestDto should fail with missing required properties" time="0.002">
+    </testcase>
+    <testcase classname="Rental DTOs CreateRentalRequestDto should validate date properties are actual Date objects" name="Rental DTOs CreateRentalRequestDto should validate date properties are actual Date objects" time="0.022">
+    </testcase>
+    <testcase classname="Rental DTOs GetRentalResponseDto should contain all rental properties" name="Rental DTOs GetRentalResponseDto should contain all rental properties" time="0.012">
+    </testcase>
+    <testcase classname="Rental DTOs GetRentalResponseDto should validate optional date properties" name="Rental DTOs GetRentalResponseDto should validate optional date properties" time="0.002">
+    </testcase>
+    <testcase classname="Rental DTOs GetRentalResponseDto should validate date properties when present" name="Rental DTOs GetRentalResponseDto should validate date properties when present" time="0">
+    </testcase>
+    <testcase classname="Rental DTOs UpdateRentalRequestDto should validate partial updates with at least one property" name="Rental DTOs UpdateRentalRequestDto should validate partial updates with at least one property" time="0">
+    </testcase>
+    <testcase classname="Rental DTOs UpdateRentalRequestDto should allow single property updates" name="Rental DTOs UpdateRentalRequestDto should allow single property updates" time="0.001">
+    </testcase>
+    <testcase classname="Rental DTOs UpdateRentalRequestDto should validate all optional properties" name="Rental DTOs UpdateRentalRequestDto should validate all optional properties" time="0.001">
+    </testcase>
+    <testcase classname="Rental DTOs UpdateRentalRequestDto should validate date properties are actual Date objects when present" name="Rental DTOs UpdateRentalRequestDto should validate date properties are actual Date objects when present" time="0">
+    </testcase>
+    <testcase classname="Rental DTOs RentalListResponseDto should validate array structure" name="Rental DTOs RentalListResponseDto should validate array structure" time="0.136">
+    </testcase>
+    <testcase classname="Rental DTOs RentalListResponseDto should handle empty array" name="Rental DTOs RentalListResponseDto should handle empty array" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="RentalService" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="7.885" tests="17">
+    <testcase classname="RentalService createRental should create a rental successfully" name="RentalService createRental should create a rental successfully" time="0.025">
+    </testcase>
+    <testcase classname="RentalService createRental should throw error if vehicle not found" name="RentalService createRental should throw error if vehicle not found" time="0.045">
+    </testcase>
+    <testcase classname="RentalService createRental should throw error if vehicle is unavailable for the requested dates" name="RentalService createRental should throw error if vehicle is unavailable for the requested dates" time="0.003">
+    </testcase>
+    <testcase classname="RentalService getRentalById should return rental by id" name="RentalService getRentalById should return rental by id" time="0.024">
+    </testcase>
+    <testcase classname="RentalService getRentalById should throw error if rental not found" name="RentalService getRentalById should throw error if rental not found" time="0.002">
+    </testcase>
+    <testcase classname="RentalService getRentalByOwnerId should return rentals by owner id" name="RentalService getRentalByOwnerId should return rentals by owner id" time="0.02">
+    </testcase>
+    <testcase classname="RentalService getRentalByOwnerId should throw error if no rentals found for owner" name="RentalService getRentalByOwnerId should throw error if no rentals found for owner" time="0.002">
+    </testcase>
+    <testcase classname="RentalService getRentalByClientId should return rentals by client id" name="RentalService getRentalByClientId should return rentals by client id" time="0.009">
+    </testcase>
+    <testcase classname="RentalService getRentalByClientId should throw error if no rentals found for client" name="RentalService getRentalByClientId should throw error if no rentals found for client" time="0.002">
+    </testcase>
+    <testcase classname="RentalService getAllRentals should return all rentals" name="RentalService getAllRentals should return all rentals" time="0.004">
+    </testcase>
+    <testcase classname="RentalService getAllRentals should throw error if no rentals found" name="RentalService getAllRentals should throw error if no rentals found" time="0.001">
+    </testcase>
+    <testcase classname="RentalService updateRental should update rental successfully" name="RentalService updateRental should update rental successfully" time="0.002">
+    </testcase>
+    <testcase classname="RentalService updateRental should throw error if rental not found" name="RentalService updateRental should throw error if rental not found" time="0.002">
+    </testcase>
+    <testcase classname="RentalService updateRental should throw error if update fails" name="RentalService updateRental should throw error if update fails" time="0.033">
+    </testcase>
+    <testcase classname="RentalService deleteRental should delete rental successfully" name="RentalService deleteRental should delete rental successfully" time="0.002">
+    </testcase>
+    <testcase classname="RentalService deleteRental should throw error if rental not found" name="RentalService deleteRental should throw error if rental not found" time="0.001">
+    </testcase>
+    <testcase classname="RentalService mapToResponse should correctly map rental entity to response DTO" name="RentalService mapToResponse should correctly map rental entity to response DTO" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Vehicle DTOs" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="8.19" tests="10">
+    <testcase classname="Vehicle DTOs CreateVehicleRequestDto should validate required properties" name="Vehicle DTOs CreateVehicleRequestDto should validate required properties" time="0.019">
+    </testcase>
+    <testcase classname="Vehicle DTOs CreateVehicleRequestDto should validate optional API properties" name="Vehicle DTOs CreateVehicleRequestDto should validate optional API properties" time="0.002">
+    </testcase>
+    <testcase classname="Vehicle DTOs CreateVehicleRequestDto should fail with missing required properties" name="Vehicle DTOs CreateVehicleRequestDto should fail with missing required properties" time="0.002">
+    </testcase>
+    <testcase classname="Vehicle DTOs GetVehicleResponseDto should contain all vehicle properties" name="Vehicle DTOs GetVehicleResponseDto should contain all vehicle properties" time="0.002">
+    </testcase>
+    <testcase classname="Vehicle DTOs GetVehicleResponseDto should validate timestamp properties" name="Vehicle DTOs GetVehicleResponseDto should validate timestamp properties" time="0.018">
+    </testcase>
+    <testcase classname="Vehicle DTOs UpdateVehicleRequestDto should validate partial updates with at least one property" name="Vehicle DTOs UpdateVehicleRequestDto should validate partial updates with at least one property" time="0.01">
+    </testcase>
+    <testcase classname="Vehicle DTOs UpdateVehicleRequestDto should allow single property updates" name="Vehicle DTOs UpdateVehicleRequestDto should allow single property updates" time="0.008">
+    </testcase>
+    <testcase classname="Vehicle DTOs UpdateVehicleRequestDto should validate all optional properties" name="Vehicle DTOs UpdateVehicleRequestDto should validate all optional properties" time="0.005">
+    </testcase>
+    <testcase classname="Vehicle DTOs VehicleListResponseDto should validate array structure" name="Vehicle DTOs VehicleListResponseDto should validate array structure" time="0.002">
+    </testcase>
+    <testcase classname="Vehicle DTOs VehicleListResponseDto should handle empty array" name="Vehicle DTOs VehicleListResponseDto should handle empty array" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="User Entities" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="8.246" tests="17">
+    <testcase classname="User Entities User Entity should validate required properties" name="User Entities User Entity should validate required properties" time="0.077">
+    </testcase>
+    <testcase classname="User Entities User Entity should validate optional properties" name="User Entities User Entity should validate optional properties" time="0.001">
+    </testcase>
+    <testcase classname="User Entities User Entity should validate property types" name="User Entities User Entity should validate property types" time="0.001">
+    </testcase>
+    <testcase classname="User Entities User Entity should validate date ordering" name="User Entities User Entity should validate date ordering" time="0.002">
+    </testcase>
+    <testcase classname="User Entities User Entity should accept minimal user configuration" name="User Entities User Entity should accept minimal user configuration" time="0.006">
+    </testcase>
+    <testcase classname="User Entities User Entity should validate email format" name="User Entities User Entity should validate email format" time="0.001">
+    </testcase>
+    <testcase classname="User Entities User Entity should validate password strength" name="User Entities User Entity should validate password strength" time="0.001">
+    </testcase>
+    <testcase classname="User Entities User Entity should validate roles array content" name="User Entities User Entity should validate roles array content" time="0.001">
+    </testcase>
+    <testcase classname="User Entities UserRole Enum should have correct role values" name="User Entities UserRole Enum should have correct role values" time="0.002">
+    </testcase>
+    <testcase classname="User Entities UserRole Enum should contain all required roles" name="User Entities UserRole Enum should contain all required roles" time="0.001">
+    </testcase>
+    <testcase classname="User Entities UserPermission Interface should validate required properties" name="User Entities UserPermission Interface should validate required properties" time="0.001">
+    </testcase>
+    <testcase classname="User Entities UserPermission Interface should validate optional id property" name="User Entities UserPermission Interface should validate optional id property" time="0.001">
+    </testcase>
+    <testcase classname="User Entities UserPermission Interface should validate property types" name="User Entities UserPermission Interface should validate property types" time="0">
+    </testcase>
+    <testcase classname="User Entities Role Interface should validate required properties" name="User Entities Role Interface should validate required properties" time="0.003">
+    </testcase>
+    <testcase classname="User Entities Role Interface should validate optional properties" name="User Entities Role Interface should validate optional properties" time="0.003">
+    </testcase>
+    <testcase classname="User Entities Role Interface should support different permission formats" name="User Entities Role Interface should support different permission formats" time="0">
+    </testcase>
+    <testcase classname="User Entities Role Interface should validate permissions array types" name="User Entities Role Interface should validate permissions array types" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="UserService" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="8.452" tests="26">
+    <testcase classname="UserService signup should throw error if user already exists during signup" name="UserService signup should throw error if user already exists during signup" time="0.097">
+    </testcase>
+    <testcase classname="UserService signup should throw error if username is already taken during signup" name="UserService signup should throw error if username is already taken during signup" time="0.003">
+    </testcase>
+    <testcase classname="UserService signup should successfully register a new user" name="UserService signup should successfully register a new user" time="0.005">
+    </testcase>
+    <testcase classname="UserService login should throw error if user is not found during login" name="UserService login should throw error if user is not found during login" time="0.004">
+    </testcase>
+    <testcase classname="UserService login should throw error if password is incorrect" name="UserService login should throw error if password is incorrect" time="0.004">
+    </testcase>
+    <testcase classname="UserService login should successfully login a user with valid credentials" name="UserService login should successfully login a user with valid credentials" time="0.004">
+    </testcase>
+    <testcase classname="UserService createUser should throw error if user already exists during createUser" name="UserService createUser should throw error if user already exists during createUser" time="0.003">
+    </testcase>
+    <testcase classname="UserService createUser should throw error if username is already taken during createUser" name="UserService createUser should throw error if username is already taken during createUser" time="0.01">
+    </testcase>
+    <testcase classname="UserService createUser should successfully create a new user" name="UserService createUser should successfully create a new user" time="0.005">
+    </testcase>
+    <testcase classname="UserService getProfile should throw error if user is not found during profile retrieval" name="UserService getProfile should throw error if user is not found during profile retrieval" time="0.002">
+    </testcase>
+    <testcase classname="UserService getProfile should successfully retrieve user profile" name="UserService getProfile should successfully retrieve user profile" time="0.013">
+    </testcase>
+    <testcase classname="UserService editUser should throw error if user is not found during edit" name="UserService editUser should throw error if user is not found during edit" time="0.002">
+    </testcase>
+    <testcase classname="UserService editUser should throw error if update fails" name="UserService editUser should throw error if update fails" time="0.001">
+    </testcase>
+    <testcase classname="UserService editUser should successfully update user profile" name="UserService editUser should successfully update user profile" time="0.002">
+    </testcase>
+    <testcase classname="UserService deleteUser should throw error if user is not found during deletion" name="UserService deleteUser should throw error if user is not found during deletion" time="0.002">
+    </testcase>
+    <testcase classname="UserService deleteUser should throw error if deletion fails" name="UserService deleteUser should throw error if deletion fails" time="0.003">
+    </testcase>
+    <testcase classname="UserService deleteUser should successfully delete a user" name="UserService deleteUser should successfully delete a user" time="0.002">
+    </testcase>
+    <testcase classname="UserService getUsers should throw error if no users are found" name="UserService getUsers should throw error if no users are found" time="0.002">
+    </testcase>
+    <testcase classname="UserService getUsers should successfully return all users" name="UserService getUsers should successfully return all users" time="0.001">
+    </testcase>
+    <testcase classname="UserService addUserRole should throw error if user not found during addUserRole" name="UserService addUserRole should throw error if user not found during addUserRole" time="0.002">
+    </testcase>
+    <testcase classname="UserService addUserRole should throw error if invalid role is provided during addUserRole" name="UserService addUserRole should throw error if invalid role is provided during addUserRole" time="0.001">
+    </testcase>
+    <testcase classname="UserService addUserRole should throw error if user update fails during addUserRole" name="UserService addUserRole should throw error if user update fails during addUserRole" time="0.002">
+    </testcase>
+    <testcase classname="UserService addUserRole should throw error if user not found after update" name="UserService addUserRole should throw error if user not found after update" time="0.002">
+    </testcase>
+    <testcase classname="UserService addUserRole should successfully add a role to a user" name="UserService addUserRole should successfully add a role to a user" time="0.002">
+    </testcase>
+    <testcase classname="UserService addUserRole should not add duplicate roles" name="UserService addUserRole should not add duplicate roles" time="0.001">
+    </testcase>
+    <testcase classname="UserService generateToken should throw error if JWT_SECRET is not defined" name="UserService generateToken should throw error if JWT_SECRET is not defined" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Rental Entity" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:11" time="0.341" tests="9">
+    <testcase classname="Rental Entity should validate required properties" name="Rental Entity should validate required properties" time="0.003">
+    </testcase>
+    <testcase classname="Rental Entity should validate optional properties" name="Rental Entity should validate optional properties" time="0.001">
+    </testcase>
+    <testcase classname="Rental Entity should validate property types" name="Rental Entity should validate property types" time="0.002">
+    </testcase>
+    <testcase classname="Rental Entity should validate date ordering" name="Rental Entity should validate date ordering" time="0.001">
+    </testcase>
+    <testcase classname="Rental Entity should accept minimal rental configuration without dates" name="Rental Entity should accept minimal rental configuration without dates" time="0.001">
+    </testcase>
+    <testcase classname="Rental Entity should validate status is a valid RentalStatus enum value" name="Rental Entity should validate status is a valid RentalStatus enum value" time="0.002">
+    </testcase>
+    <testcase classname="Rental Entity should validate total cost is non-negative" name="Rental Entity should validate total cost is non-negative" time="0.001">
+    </testcase>
+    <testcase classname="Rental Entity should validate rental duration calculation" name="Rental Entity should validate rental duration calculation" time="0.001">
+    </testcase>
+    <testcase classname="Rental Entity should validate IDs follow expected format" name="Rental Entity should validate IDs follow expected format" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth DTOs" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:11" time="0.267" tests="4">
+    <testcase classname="Auth DTOs SignupRequestDto should have required properties" name="Auth DTOs SignupRequestDto should have required properties" time="0.003">
+    </testcase>
+    <testcase classname="Auth DTOs LoginRequestDto should have required properties" name="Auth DTOs LoginRequestDto should have required properties" time="0.001">
+    </testcase>
+    <testcase classname="Auth DTOs LoginResponseDto should have token property" name="Auth DTOs LoginResponseDto should have token property" time="0.001">
+    </testcase>
+    <testcase classname="Auth DTOs SignUpResponseDto should have token and user properties" name="Auth DTOs SignUpResponseDto should have token and user properties" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Vehicle Entity" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:11" time="0.326" tests="6">
+    <testcase classname="Vehicle Entity should validate required properties" name="Vehicle Entity should validate required properties" time="0.002">
+    </testcase>
+    <testcase classname="Vehicle Entity should validate optional properties" name="Vehicle Entity should validate optional properties" time="0.001">
+    </testcase>
+    <testcase classname="Vehicle Entity should validate property types" name="Vehicle Entity should validate property types" time="0.002">
+    </testcase>
+    <testcase classname="Vehicle Entity should validate date ordering" name="Vehicle Entity should validate date ordering" time="0">
+    </testcase>
+    <testcase classname="Vehicle Entity should accept minimal vehicle configuration" name="Vehicle Entity should accept minimal vehicle configuration" time="0.001">
+    </testcase>
+    <testcase classname="Vehicle Entity should validate license plate format" name="Vehicle Entity should validate license plate format" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Users DTOs" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:11" time="0.182" tests="3">
+    <testcase classname="Users DTOs GetProfileResponseDto should contain user profile data" name="Users DTOs GetProfileResponseDto should contain user profile data" time="0.002">
+    </testcase>
+    <testcase classname="Users DTOs EditUserDto should allow partial updates" name="Users DTOs EditUserDto should allow partial updates" time="0.001">
+    </testcase>
+    <testcase classname="Users DTOs GetUsersResponseDto should be an array of user profiles" name="Users DTOs GetUsersResponseDto should be an array of user profiles" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="VehicleService" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="8.962" tests="18">
+    <testcase classname="VehicleService createVehicle should create a vehicle successfully" name="VehicleService createVehicle should create a vehicle successfully" time="0.088">
+    </testcase>
+    <testcase classname="VehicleService createVehicle should throw error if license plate already exists" name="VehicleService createVehicle should throw error if license plate already exists" time="0.049">
+    </testcase>
+    <testcase classname="VehicleService createVehicle should handle API error gracefully" name="VehicleService createVehicle should handle API error gracefully" time="0.005">
+    </testcase>
+    <testcase classname="VehicleService getAllVehicles should return all vehicles" name="VehicleService getAllVehicles should return all vehicles" time="0.002">
+    </testcase>
+    <testcase classname="VehicleService getAllVehicles should throw error if no vehicles found" name="VehicleService getAllVehicles should throw error if no vehicles found" time="0.002">
+    </testcase>
+    <testcase classname="VehicleService getVehicleById should return vehicle by id" name="VehicleService getVehicleById should return vehicle by id" time="0.013">
+    </testcase>
+    <testcase classname="VehicleService getVehicleById should throw error if vehicle not found" name="VehicleService getVehicleById should throw error if vehicle not found" time="0.002">
+    </testcase>
+    <testcase classname="VehicleService getVehicleByLicensePlate should return vehicle by license plate" name="VehicleService getVehicleByLicensePlate should return vehicle by license plate" time="0.001">
+    </testcase>
+    <testcase classname="VehicleService getVehicleByLicensePlate should throw error if vehicle not found" name="VehicleService getVehicleByLicensePlate should throw error if vehicle not found" time="0.002">
+    </testcase>
+    <testcase classname="VehicleService getVehiclesByOwner should return vehicles by owner" name="VehicleService getVehiclesByOwner should return vehicles by owner" time="0.005">
+    </testcase>
+    <testcase classname="VehicleService getVehiclesByOwner should throw error if no vehicles found" name="VehicleService getVehiclesByOwner should throw error if no vehicles found" time="0.003">
+    </testcase>
+    <testcase classname="VehicleService updateVehicle should update vehicle successfully" name="VehicleService updateVehicle should update vehicle successfully" time="0.005">
+    </testcase>
+    <testcase classname="VehicleService updateVehicle should throw error if vehicle not found" name="VehicleService updateVehicle should throw error if vehicle not found" time="0.004">
+    </testcase>
+    <testcase classname="VehicleService updateVehicle should throw error if user is not the owner" name="VehicleService updateVehicle should throw error if user is not the owner" time="0.005">
+    </testcase>
+    <testcase classname="VehicleService updateVehicle should throw error if update fails" name="VehicleService updateVehicle should throw error if update fails" time="0.012">
+    </testcase>
+    <testcase classname="VehicleService deleteVehicle should delete vehicle successfully" name="VehicleService deleteVehicle should delete vehicle successfully" time="0.002">
+    </testcase>
+    <testcase classname="VehicleService deleteVehicle should throw error if vehicle not found" name="VehicleService deleteVehicle should throw error if vehicle not found" time="0.002">
+    </testcase>
+    <testcase classname="VehicleService deleteVehicle should throw error if user is not the owner" name="VehicleService deleteVehicle should throw error if user is not the owner" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Vehicle Model" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:10" time="5.735" tests="7">
+    <testcase classname="Vehicle Model Create Operations should create a vehicle with valid data" name="Vehicle Model Create Operations should create a vehicle with valid data" time="0.071">
+    </testcase>
+    <testcase classname="Vehicle Model Create Operations should auto-trim license plate whitespace" name="Vehicle Model Create Operations should auto-trim license plate whitespace" time="0.04">
+    </testcase>
+    <testcase classname="Vehicle Model Optional Fields should accept valid optional fields" name="Vehicle Model Optional Fields should accept valid optional fields" time="0.013">
+    </testcase>
+    <testcase classname="Vehicle Model Optional Fields should ignore extra fields" name="Vehicle Model Optional Fields should ignore extra fields" time="0.011">
+    </testcase>
+    <testcase classname="Vehicle Model Update Operations should update vehicle successfully" name="Vehicle Model Update Operations should update vehicle successfully" time="0.029">
+    </testcase>
+    <testcase classname="Vehicle Model Query Operations should find vehicles by owner" name="Vehicle Model Query Operations should find vehicles by owner" time="0.018">
+    </testcase>
+    <testcase classname="Vehicle Model Query Operations should return empty array for non-existent owner" name="Vehicle Model Query Operations should return empty array for non-existent owner" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="MongoRentalRepository" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="13.554" tests="14">
+    <testcase classname="MongoRentalRepository create should create a new rental" name="MongoRentalRepository create should create a new rental" time="0.081">
+    </testcase>
+    <testcase classname="MongoRentalRepository findAll should return all rentals" name="MongoRentalRepository findAll should return all rentals" time="0.036">
+    </testcase>
+    <testcase classname="MongoRentalRepository findAll should return empty array when no rentals exist" name="MongoRentalRepository findAll should return empty array when no rentals exist" time="0.012">
+    </testcase>
+    <testcase classname="MongoRentalRepository findById should find a rental by id" name="MongoRentalRepository findById should find a rental by id" time="0.016">
+    </testcase>
+    <testcase classname="MongoRentalRepository findById should return null if rental not found" name="MongoRentalRepository findById should return null if rental not found" time="0.008">
+    </testcase>
+    <testcase classname="MongoRentalRepository findByOwner should find rentals by owner id" name="MongoRentalRepository findByOwner should find rentals by owner id" time="0.015">
+    </testcase>
+    <testcase classname="MongoRentalRepository findByOwner should return empty array if no rentals found for owner" name="MongoRentalRepository findByOwner should return empty array if no rentals found for owner" time="0.005">
+    </testcase>
+    <testcase classname="MongoRentalRepository findByClient should find rentals by client id" name="MongoRentalRepository findByClient should find rentals by client id" time="0.013">
+    </testcase>
+    <testcase classname="MongoRentalRepository findByClient should return empty array if no rentals found for client" name="MongoRentalRepository findByClient should return empty array if no rentals found for client" time="0.006">
+    </testcase>
+    <testcase classname="MongoRentalRepository update should update a rental" name="MongoRentalRepository update should update a rental" time="0.022">
+    </testcase>
+    <testcase classname="MongoRentalRepository update should return null if rental not found" name="MongoRentalRepository update should return null if rental not found" time="0.006">
+    </testcase>
+    <testcase classname="MongoRentalRepository delete should delete a rental" name="MongoRentalRepository delete should delete a rental" time="0.016">
+    </testcase>
+    <testcase classname="MongoRentalRepository delete should return false if rental not found" name="MongoRentalRepository delete should return false if rental not found" time="0.005">
+    </testcase>
+    <testcase classname="MongoRentalRepository documentToEntity conversion should correctly convert document to entity" name="MongoRentalRepository documentToEntity conversion should correctly convert document to entity" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="MongoVehicleRepository" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:10" time="6.174" tests="13">
+    <testcase classname="MongoVehicleRepository create should create a new vehicle" name="MongoVehicleRepository create should create a new vehicle" time="0.115">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findAll should return all vehicles" name="MongoVehicleRepository findAll should return all vehicles" time="0.032">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findAll should return empty array when no vehicles exist" name="MongoVehicleRepository findAll should return empty array when no vehicles exist" time="0.009">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findById should find a vehicle by id" name="MongoVehicleRepository findById should find a vehicle by id" time="0.013">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findById should return null if vehicle not found" name="MongoVehicleRepository findById should return null if vehicle not found" time="0.008">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findByLicensePlate should find a vehicle by license plate" name="MongoVehicleRepository findByLicensePlate should find a vehicle by license plate" time="0.019">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findByLicensePlate should return null if license plate not found" name="MongoVehicleRepository findByLicensePlate should return null if license plate not found" time="0.007">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findByOwner should find vehicles by owner id" name="MongoVehicleRepository findByOwner should find vehicles by owner id" time="0.016">
+    </testcase>
+    <testcase classname="MongoVehicleRepository findByOwner should return empty array if no vehicles found for owner" name="MongoVehicleRepository findByOwner should return empty array if no vehicles found for owner" time="0.007">
+    </testcase>
+    <testcase classname="MongoVehicleRepository update should update a vehicle" name="MongoVehicleRepository update should update a vehicle" time="0.022">
+    </testcase>
+    <testcase classname="MongoVehicleRepository update should return null if vehicle not found" name="MongoVehicleRepository update should return null if vehicle not found" time="0.006">
+    </testcase>
+    <testcase classname="MongoVehicleRepository delete should delete a vehicle" name="MongoVehicleRepository delete should delete a vehicle" time="0.019">
+    </testcase>
+    <testcase classname="MongoVehicleRepository delete should return false if vehicle not found" name="MongoVehicleRepository delete should return false if vehicle not found" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="Rental Model" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="13.727" tests="14">
+    <testcase classname="Rental Model Create Operations should create a rental with valid data" name="Rental Model Create Operations should create a rental with valid data" time="0.113">
+    </testcase>
+    <testcase classname="Rental Model Create Operations should fail when required fields are missing" name="Rental Model Create Operations should fail when required fields are missing" time="0.008">
+    </testcase>
+    <testcase classname="Rental Model Default Values should set default status to PENDING" name="Rental Model Default Values should set default status to PENDING" time="0.015">
+    </testcase>
+    <testcase classname="Rental Model Default Values should set default dates if not provided" name="Rental Model Default Values should set default dates if not provided" time="0.009">
+    </testcase>
+    <testcase classname="Rental Model Enum Validation should accept all valid status values" name="Rental Model Enum Validation should accept all valid status values" time="0.028">
+    </testcase>
+    <testcase classname="Rental Model Enum Validation should reject invalid status values" name="Rental Model Enum Validation should reject invalid status values" time="0.004">
+    </testcase>
+    <testcase classname="Rental Model Update Operations should update rental status successfully" name="Rental Model Update Operations should update rental status successfully" time="0.022">
+    </testcase>
+    <testcase classname="Rental Model Update Operations should update dates and total cost" name="Rental Model Update Operations should update dates and total cost" time="0.015">
+    </testcase>
+    <testcase classname="Rental Model Query Operations should find rentals by vehicle ID" name="Rental Model Query Operations should find rentals by vehicle ID" time="0.026">
+    </testcase>
+    <testcase classname="Rental Model Query Operations should find rentals by client ID" name="Rental Model Query Operations should find rentals by client ID" time="0.014">
+    </testcase>
+    <testcase classname="Rental Model Query Operations should find rentals by owner ID" name="Rental Model Query Operations should find rentals by owner ID" time="0.012">
+    </testcase>
+    <testcase classname="Rental Model Query Operations should find rentals by status" name="Rental Model Query Operations should find rentals by status" time="0.018">
+    </testcase>
+    <testcase classname="Rental Model Query Operations should find rentals within a date range" name="Rental Model Query Operations should find rentals within a date range" time="0.014">
+    </testcase>
+    <testcase classname="Rental Model Query Operations should return empty array for non-existent data" name="Rental Model Query Operations should return empty array for non-existent data" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="MongoVehicleUnavailabilityRepository" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="15.109" tests="11">
+    <testcase classname="MongoVehicleUnavailabilityRepository findByVehicleId should return empty array when vehicle has no unavailability periods" name="MongoVehicleUnavailabilityRepository findByVehicleId should return empty array when vehicle has no unavailability periods" time="0.062">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository findByVehicleId should return all unavailability periods for a vehicle" name="MongoVehicleUnavailabilityRepository findByVehicleId should return all unavailability periods for a vehicle" time="0.029">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository findByVehicleId should return empty array when vehicle not found" name="MongoVehicleUnavailabilityRepository findByVehicleId should return empty array when vehicle not found" time="0.012">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository addUnavailability should add a new unavailability period to a vehicle" name="MongoVehicleUnavailabilityRepository addUnavailability should add a new unavailability period to a vehicle" time="0.017">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository addUnavailability should add multiple unavailability periods to a vehicle" name="MongoVehicleUnavailabilityRepository addUnavailability should add multiple unavailability periods to a vehicle" time="0.019">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository addUnavailability should return empty array when vehicle not found" name="MongoVehicleUnavailabilityRepository addUnavailability should return empty array when vehicle not found" time="0.008">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository removeUnavailability should remove an unavailability period from a vehicle" name="MongoVehicleUnavailabilityRepository removeUnavailability should remove an unavailability period from a vehicle" time="0.021">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository removeUnavailability should return all unavailability periods when unavailability ID not found" name="MongoVehicleUnavailabilityRepository removeUnavailability should return all unavailability periods when unavailability ID not found" time="0.012">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository removeUnavailability should return empty array when vehicle not found" name="MongoVehicleUnavailabilityRepository removeUnavailability should return empty array when vehicle not found" time="0.01">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository edge cases should handle date objects correctly" name="MongoVehicleUnavailabilityRepository edge cases should handle date objects correctly" time="0.014">
+    </testcase>
+    <testcase classname="MongoVehicleUnavailabilityRepository edge cases should handle concurrent operations correctly" name="MongoVehicleUnavailabilityRepository edge cases should handle concurrent operations correctly" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="User Model" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="15.805" tests="13">
+    <testcase classname="User Model Create Operations should create a user with valid data" name="User Model Create Operations should create a user with valid data" time="0.263">
+    </testcase>
+    <testcase classname="User Model Create Operations should auto-trim username and email whitespace" name="User Model Create Operations should auto-trim username and email whitespace" time="0.143">
+    </testcase>
+    <testcase classname="User Model Create Operations should hash the password before saving" name="User Model Create Operations should hash the password before saving" time="0.227">
+    </testcase>
+    <testcase classname="User Model Create Operations should not rehash the password if it was not modified" name="User Model Create Operations should not rehash the password if it was not modified" time="0.116">
+    </testcase>
+    <testcase classname="User Model Validation should require username, email, and password" name="User Model Validation should require username, email, and password" time="0.005">
+    </testcase>
+    <testcase classname="User Model Validation should enforce minimum password length" name="User Model Validation should enforce minimum password length" time="0.004">
+    </testcase>
+    <testcase classname="User Model Validation should enforce unique username and email" name="User Model Validation should enforce unique username and email" time="0.234">
+    </testcase>
+    <testcase classname="User Model Password Comparison should correctly compare valid password" name="User Model Password Comparison should correctly compare valid password" time="0.233">
+    </testcase>
+    <testcase classname="User Model Password Comparison should correctly reject invalid password" name="User Model Password Comparison should correctly reject invalid password" time="0.222">
+    </testcase>
+    <testcase classname="User Model Update Operations should update user successfully" name="User Model Update Operations should update user successfully" time="0.13">
+    </testcase>
+    <testcase classname="User Model Update Operations should hash password when updated" name="User Model Update Operations should hash password when updated" time="0.343">
+    </testcase>
+    <testcase classname="User Model Query Operations should find users by role" name="User Model Query Operations should find users by role" time="0.226">
+    </testcase>
+    <testcase classname="User Model Query Operations should return empty array for non-existent role" name="User Model Query Operations should return empty array for non-existent role" time="0.107">
+    </testcase>
+  </testsuite>
+  <testsuite name="MongoUserRepository" errors="0" failures="0" skipped="0" timestamp="2025-04-08T23:22:03" time="18.099" tests="15">
+    <testcase classname="MongoUserRepository create should create a new user" name="MongoUserRepository create should create a new user" time="0.258">
+    </testcase>
+    <testcase classname="MongoUserRepository create should not create a user with missing fields" name="MongoUserRepository create should not create a user with missing fields" time="0.128">
+    </testcase>
+    <testcase classname="MongoUserRepository findById should find a user by ID" name="MongoUserRepository findById should find a user by ID" time="0.296">
+    </testcase>
+    <testcase classname="MongoUserRepository findById should return null for a non-existing ID" name="MongoUserRepository findById should return null for a non-existing ID" time="0.12">
+    </testcase>
+    <testcase classname="MongoUserRepository findById should return null for an invalid ID format" name="MongoUserRepository findById should return null for an invalid ID format" time="0.122">
+    </testcase>
+    <testcase classname="MongoUserRepository findByEmail should find a user by email" name="MongoUserRepository findByEmail should find a user by email" time="0.238">
+    </testcase>
+    <testcase classname="MongoUserRepository findByEmail should return null for a non-existing email" name="MongoUserRepository findByEmail should return null for a non-existing email" time="0.111">
+    </testcase>
+    <testcase classname="MongoUserRepository findByUsername should find a user by username" name="MongoUserRepository findByUsername should find a user by username" time="0.274">
+    </testcase>
+    <testcase classname="MongoUserRepository findByUsername should return null for a non-existing username" name="MongoUserRepository findByUsername should return null for a non-existing username" time="0.113">
+    </testcase>
+    <testcase classname="MongoUserRepository findAll should find all users" name="MongoUserRepository findAll should find all users" time="0.231">
+    </testcase>
+    <testcase classname="MongoUserRepository update should update a user" name="MongoUserRepository update should update a user" time="0.242">
+    </testcase>
+    <testcase classname="MongoUserRepository update should return null when updating a non-existing user" name="MongoUserRepository update should return null when updating a non-existing user" time="0.103">
+    </testcase>
+    <testcase classname="MongoUserRepository delete should delete a user successfully" name="MongoUserRepository delete should delete a user successfully" time="0.244">
+    </testcase>
+    <testcase classname="MongoUserRepository delete should return false for a non-existing user" name="MongoUserRepository delete should return false for a non-existing user" time="0.128">
+    </testcase>
+    <testcase classname="MongoUserRepository delete should return false for an invalid ID format" name="MongoUserRepository delete should return false for an invalid ID format" time="0.097">
+    </testcase>
+  </testsuite>
+</testsuites>
