@@ -53,4 +53,10 @@
     "mongodb": "^6.15.0",
     "mongoose": "^8.12.2"
   }
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["lcov", "text"],
+    "testResultsProcessor": "jest-junit"
+  }
 }
