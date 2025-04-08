@@ -2,5 +2,5 @@ projectKey=car-link-express
 serverUrl=http://51.144.231.63:9000
 serverVersion=25.4.0.105899
 dashboardUrl=http://51.144.231.63:9000/dashboard?id=car-link-express
-ceTaskId=d31bf6a3-67a7-430b-9244-3884ec2a02af
-ceTaskUrl=http://51.144.231.63:9000/api/ce/task?id=d31bf6a3-67a7-430b-9244-3884ec2a02af
+ceTaskId=7c4e499b-859c-4ad7-a042-74e1a629bbc6
+ceTaskUrl=http://51.144.231.63:9000/api/ce/task?id=7c4e499b-859c-4ad7-a042-74e1a629bbc6
